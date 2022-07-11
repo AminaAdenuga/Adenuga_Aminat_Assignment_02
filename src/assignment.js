@@ -4,18 +4,42 @@ const assignment = {};
 // ========================
 
 
-/**
- * Challenge - 1
- * 
- * Calculate and return the sum of the numbers in an array.
- * If you did Challenge - 1, remove the comment in the line just after this function
- * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
- * @returns number the sum of the numbers
- */
+
+ // *// Challenge - 1
+ // * 
+ // * Calculate and return the sum of the numbers in an array.
+ // * If you did Challenge - 1, remove the comment in the line just after this function *//
+ 
+  // @param {Array} arrayOfNumbers the array of numbers to sum
+  // @returns number the sum of the numbers
+ 
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
+
+// solution 
+let arr = [1,2,3,4,5,6,7];
+function sum(a){
+  if(a < 0){
+    return 0;
+
+  } else {
+    return arr[a] + sum(a-1)
+  }
+}
+console.log(sum(4));
+
+function anotherSum() {
+  let arr = [1,2,3,4,5,6,7];
+
+  let sum = 0;
+
+  for(let i =0; i < arr.length; i++){
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log(anotherSum())
 // assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -27,9 +51,21 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+let anArray = [1,2,3,4,5,6,7];
+
+function countTwo(anArray) {
+  let sum = 0
+  for (let i = 0; i < anArray.length; i++) {
+    if (anArray[i] % 2 === 0){
+      sum += anArray[i]
+    }
+  }
+  return sum;
 }
+console.log(countTwo(anArray));
+// function countEvenNumbers(arrayOfNumbers) {
+//     return arrayOfNumbers.length;
+// }
 // assignment.countEvenNumbers = countEvenNumbers;
 
 /**
