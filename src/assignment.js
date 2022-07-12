@@ -15,7 +15,7 @@ const assignment = {};
  //solution to challenge 1
 function sumOfNumbers(arrayOfNumbers) {
  const sum = arrayOfNumbers.reduce ((a,b) => a+b);   
-  console.log(sum)
+return sum
  }
  assignment.sumOfNumbers = sumOfNumbers;
      
